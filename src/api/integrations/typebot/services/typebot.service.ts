@@ -285,6 +285,7 @@ export class TypebotService {
         msg.viewOnceMessageV2?.message?.audioMessage?.url,
       listResponseMessage: msg.listResponseMessage?.singleSelectReply?.selectedRowId,
       responseRowId: msg.listResponseMessage?.singleSelectReply?.selectedRowId,
+      responseRowId: msg.listResponseMessage.singleSelectReply?.selectedRowId,
     };
 
     const messageType = Object.keys(types).find((key) => types[key] !== undefined) || 'unknown';
